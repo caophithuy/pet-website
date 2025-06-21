@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>trang web thú cưng nhà tui</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="fade-in">
+      Xin chào ! Chào mừng các bạn đến với trang web của THỦY
+    </h1>
+    <p>click vào ảnh để xem bộ sưu tập!</p>
+    <a href="gallery.html"><img src="images/photo41.jpg" alt="ảnh chính" </a>
+    <audio autoplay loop>
+      <source src="music/nen-nhac.mp3" type="audio/mpeg" />
+    </audio>
+    <script>
+      document.body.addEventListener(
+        "click",
+        function () {
+          const music = document.getElementById("bg-music");
+          music.play();
+        },
+        { once: true }
+      );
+    </script>
+  </body>
+</html>
