@@ -6,7 +6,15 @@ v<!DOCTYPE html>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1></h1>
+    <h1>
+      XIN CHÀO😊 đây là những hình và video từ 4 năm trước của mình , các bạn
+      xem vui vẻ nhé 😘
+    </h1>
+    <audio id="bg-music">
+      <source src="music/nen-nhac1.mp3" type="audio/mpeg" />
+    </audio>
+
+    <button onclick="playMusic()">🎵 Bật nhạc</button>
     <div>
       <img src="images/photo1.jpg.jpg" alt="ảnh 1" />
       <video controls autoplay muted loop width="200">
@@ -77,5 +85,11 @@ v<!DOCTYPE html>
         <button>👉quay về trang chính</button>
       </a>
     </p>
+    <script>
+      function playMusic() {
+        const music = document.getElementById("bg-music");
+        music.play();
+      }
+    </script>
   </body>
 </html>
