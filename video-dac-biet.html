@@ -7,8 +7,48 @@
   </head>
   <body>
     <h1>Xem video đặc biệt , giành cho người đặc biệt 💖</h1>
-    <video controls autoplay width="600">
+    <video id="specialVideo" controls autoplay width="600">
       <source src="video/video-moi.mp4" type="video/mp4" />
     </video>
+    <p
+      id="message"
+      class="fade-in"
+      style="
+        display: none;
+        text-align: center;
+        font-size: 40px;
+        color: #444;
+        margin-top: 20px;
+      "
+    >
+      🎉 Cảm ơn bạn đã dành thời gian xem video đặc biệt này!
+      <br />
+      Tui biết gần đây bà đang có nhiều chuyện phải lo nè nhưng hy vọng bà sẽ
+      luôn vui tươi và đừng buồn nữa nhé , những chuyện không thuận lợi là ông
+      trời đang muốn bảo vệ bà đó ! 😊
+    </p>
+    <script>
+      const video = document.getElementById("specialVideo");
+      const thankMessage = document.getElementById("message");
+
+      video.addEventListener("ended", function () {
+        video.style.display = "none";
+        thankMessage.style.display = "block";
+      });
+    </script>
+
+    <a href="gallery.html">
+      <button
+        style="
+          margin-top: 30px;
+          padding: 10px 20px;
+          background-color: #fcd5ce;
+          border: none;
+          border-radius: 5px;
+        "
+      >
+        🏠 Quay lại bộ sưu tập
+      </button>
+    </a>
   </body>
 </html>
