@@ -45,11 +45,11 @@ fade-in {
 button {
   background-color: black;
   color: white;
-  font-size: 100px;
+  font-size: 50px;
 }
 video {
   width: 100%;
-  max-width: 800px;
+  max-width: 850px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgb(0, 0, 00.2);

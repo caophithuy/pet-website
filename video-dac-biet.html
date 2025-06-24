@@ -23,9 +23,8 @@
     >
       🎉 Cảm ơn bạn đã dành thời gian xem video đặc biệt này!
       <br />
-      Tui biết gần đây bà đang có nhiều chuyện phải lo nè nhưng hy vọng bà sẽ
-      luôn vui tươi và đừng buồn nữa nhé , những chuyện không thuận lợi là ông
-      trời đang muốn bảo vệ bà đó ! 😊
+      Chúc mừng bạn đậu nhà nha, hy vọng tương lai bạn sẽ luôn vui tươi và đừng
+      buồn nữa nhé ! 😊
     </p>
     <script>
       const video = document.getElementById("specialVideo");
@@ -50,5 +49,18 @@
         🏠 Quay lại bộ sưu tập
       </button>
     </a>
+    <audio id="bg-music" loop>
+      <source src="music/nen-nhac2.mp3" type="audio/mpeg" />
+    </audio>
+    <script>
+      document.body.addEventListener(
+        "click",
+        function () {
+          const music = document.getElementById("bg-music");
+          music.play();
+        },
+        { once: true }
+      );
+    </script>
   </body>
 </html>
